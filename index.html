@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalify</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">Minimalify</div>
+            <nav>
+                <a href="#" class="nav-item active">Главная</a>
+                <a href="#" class="nav-item">Поиск</a>
+                <a href="#" class="nav-item">Библиотека</a>
+            </nav>
+            <div class="playlists">
+                <h3>Плейлисты</h3>
+                <ul>
+                    <li>Daily Mix 1</li>
+                    <li>Chill Vibes</li>
+                    <li>Focus Flow</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <div class="user">Гость</div>
+            </header>
+            <div class="content">
+                <h1>Добро пожаловать в Minimalify</h1>
+                <div class="tracks">
+                    <div class="track" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" data-title="Song 1" data-artist="Artist 1">
+                        <span>01</span>
+                        <span>Song 1</span>
+                        <span>Artist 1</span>
+                        <span>3:45</span>
+                    </div>
+                    <div class="track" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" data-title="Song 2" data-artist="Artist 2">
+                        <span>02</span>
+                        <span>Song 2</span>
+                        <span>Artist 2</span>
+                        <span>4:12</span>
+                    </div>
+                    <div class="track" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" data-title="Song 3" data-artist="Artist 3">
+                        <span>03</span>
+                        <span>Song 3</span>
+                        <span>Artist 3</span>
+                        <span>2:58</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Player -->
+        <div class="player">
+            <div class="now-playing">
+                <div id="cover" class="cover"></div>
+                <div>
+                    <div id="title">Выберите трек</div>
+                    <div id="artist">Artist</div>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="prev">⫻</button>
+                <button id="play-pause">▶</button>
+                <button id="next">⫻</button>
+            </div>
+            <div class="progress">
+                <input type="range" id="progress-bar" value="0" min="0" max="100">
+                <span id="time">0:00 / 0:00</span>
+            </div>
+            <div class="volume">
+                <input type="range" id="volume" value="80" min="0" max="100">
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio" src=""></audio>
+    <script src="script.js"></script>
+</body>
+</html>
